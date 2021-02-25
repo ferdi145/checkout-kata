@@ -1,5 +1,3 @@
 package kata.checkout
 
-class Price(i: Int) {
-
-}
+data class Price(val value: Int)

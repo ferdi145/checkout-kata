@@ -1,12 +1,14 @@
 package kata.checkout
 
 class Checkout{
+    private var item: Items = Items()
+
     fun scan(item: Item) {
-        // TODO
+        this.item = item
     }
 
-    fun total(): Price {
-
+    fun total(): Price? {
+        return item?.price
     }
 
 }
